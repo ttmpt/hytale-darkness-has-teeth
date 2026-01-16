@@ -39,8 +39,8 @@ import javax.annotation.Nullable;
 
 public class DarknessMiningSystem extends EntityEventSystem<EntityStore, BreakBlockEvent> {
     private static final int THRESHOLD_NOTICE = 20;
-    private static final int THRESHOLD_WARN = 25;
-    private static final int THRESHOLD_SPAWN = 30;
+    private static final int THRESHOLD_WARN = 30;
+    private static final int THRESHOLD_SPAWN = 40;
     private static final double INCREASE_DARKNESS_CHANCE = 0.5;
 
     private final String[] creatures = new String[]{
@@ -229,7 +229,7 @@ public class DarknessMiningSystem extends EntityEventSystem<EntityStore, BreakBl
             @Nonnull final Ref<EntityStore> playerRef, @Nonnull final Vector3d position, @Nonnull final String sound) {
         int index = SoundEvent.getAssetMap().getIndex(sound);
         world.execute(() -> {
-            SoundUtil.playSoundEvent2dToPlayer(playerRef, index, SoundCategory.Ambient, store, 0.5F, 1.2F);
+            SoundUtil.playSoundEvent3dToPlayer(playerRef, index, SoundCategory.Ambient, position.getX(), position.getY(), position.getZ(), 0.5F, 1.2F, store);
         });
     }
 
