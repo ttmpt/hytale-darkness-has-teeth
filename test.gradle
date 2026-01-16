@@ -1,0 +1,9 @@
+def isLinux = System.getProperty("os.name").toLowerCase().contains("linux")
+def hytaleBasePath = System.getProperty("user.home") + (isLinux
+        ? "/.var/app/com.hypixel.HytaleLauncher/data/Hytale"
+        : "/AppData/Roaming/Hytale")
+def hytaleJar = "$hytaleBasePath/install/release/package/game/latest/Server/HytaleServer.jar"
+println "isLinux: $isLinux"
+println "hytaleBasePath: $hytaleBasePath"
+println "hytaleJar: $hytaleJar"
+println "Jar exists: " + new File(hytaleJar).exists()
