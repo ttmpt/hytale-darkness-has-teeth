@@ -2,7 +2,7 @@
   "Group": "ttmpt",
   "Name": "Darkness has Teeth",
   "Version": "0.1.0",
-  "Description": "Spawn dangerous mobs when mining in darkness.",
+  "Description": "Creatures might spawn while mining in the darkness. Seek light!",
   "Authors": [
     {
       "Name": "ttmpt",
