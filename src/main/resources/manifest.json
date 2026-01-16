@@ -1,0 +1,19 @@
+{
+  "Group": "ttmpt",
+  "Name": "Darkness has Teeth",
+  "Version": "0.1.0",
+  "Description": "Spawn dangerous mobs when mining in darkness.",
+  "Authors": [
+    {
+      "Name": "ttmpt",
+      "Email": "ttmpt@gmx.net"
+    }
+  ],
+  "Main": "net.ttmpt.DarknessHasTeeth",
+  "ServerVersion": "*",
+  "Dependencies": {},
+  "OptionalDependencies": {},
+  "DisabledByDefault": false,
+  "IncludesAssetPack": false,
+  "SubPlugins": []
+}
